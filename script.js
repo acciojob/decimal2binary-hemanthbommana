@@ -3,10 +3,10 @@ function decimalToBinary(num) {
 	 let str = "";
     while (num != 0) 
     {
-		  let str += num%2 ;
-		 num = num/2;
+		 str += (num%2) ;
+		 num = Math.floor(num/2) ;
     }
-    return str;
+    return str.split("").reverse().join("");
   
 }
 
