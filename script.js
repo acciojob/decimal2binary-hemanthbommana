@@ -1,17 +1,10 @@
 function decimalToBinary(num) {
   //Write you code here
-	 var str = "";
-    while (num) 
+	 let str = "";
+    while (num != 0) 
     {
-    
-        // adding the result of num & 1 to str
-        if (num & 1) // 1
-            str += '1';
-        else // 0
-            str += '0';
-            
-        // Right Shift by 1
-        num >>= 1;
+		  let str += num%2 ;
+		 num = num/2;
     }
     return str;
   
